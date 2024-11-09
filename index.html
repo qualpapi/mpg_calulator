@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fuel Cost Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fuel Cost Calculator</h1>
+  <form>
+    <label for="brand">Vehicle Brand:</label>
+    <input type="text" id="brand" placeholder="Enter vehicle brand">
+    <br>
+    <label for="model">Vehicle Model:</label>
+    <input type="text" id="model" placeholder="Enter vehicle model">
+    <br>
+    <label for="userEfficiency">Or, enter your vehicle's fuel efficiency (km/liter):</label>
+    <input type="number" id="userEfficiency" placeholder="Enter fuel efficiency">
+    <br>
+    <label for="distance">Distance (km):</label>
+    <input type="number" id="distance" placeholder="Enter distance">
+    <br>
+    <label for="fuelPrice">Fuel Price (Ksh/liter):</label>
+    <input type="number" id="fuelPrice" placeholder="Enter fuel price">
+    <br>
+    <button type="button" onclick="calculateCost()">Calculate Cost</button>
+  </form>
+  <p id="result"></p>
+  <script src="script.js"></script>
+</body>
+</html>
